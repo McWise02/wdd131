@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #2C3E50;  /* Dark blue-gray */
+    --secondary-color: #E67E22; /* Warm orange */
+    --font-family: 'Inter', sans-serif; /* Clean and professional font */
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+  }
+
+div {
+    padding: 10px;
+}
+
+header {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: aliceblue;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navheader {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #E67E22;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.navheader a {
+    color: white; /* Makes links white */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navheader a:hover {
+    color: lightgray; /* Changes color on hover */
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+.cardcontainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* First card takes 2 columns, second card takes 1 */
+    gap: 1rem;
+}
+
+h2 {
+    border-radius: 10px;
+    border: 3px solid var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    border-radius: 10px; /* Makes cards rounded */
+    background-color: var(--primary-color);
+    color: antiquewhite;
+    padding-right: 5px;
+
+}
+
+.aboutmecontainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px;    /* Adds some padding for proper alignment */
+}
+
+nav a {
+    text-decoration: none; /* Optional: removes underline from links */
+    color: rgb(230, 112, 112); /* Optional: you can set your preferred color for links */
+}
+nav a:hover {
+    color: white; /* Changes text color on hover */
+    background-color: var(--primary-color); /* Adds background color on hover */
+    padding: 5px 10px; /* Adds padding around the link on hover */
+    border-radius: 5px; /* Rounds the corners of the background */
+}
+nav li {
+    padding: 10px;
+}
+
+footer {
+    color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+img {
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    width: 100%;
+}
+
+.lastModified {
+    color: white;
+}
