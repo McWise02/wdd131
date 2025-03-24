@@ -2,11 +2,7 @@
     display:none;
 }
 
-header div {
-    display: flex;
-    flex-direction: column;
 
-}
 
 .menuLinks {
     display: flex;

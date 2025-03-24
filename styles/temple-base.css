@@ -138,3 +138,15 @@ footer {
     background-color: var(--main-blue);
 }
 
+/* Default (for larger screens) */
+header div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* When the screen width is 768px or smaller (adjust if needed) */
+@media (max-width: 768px) {
+    header div {
+        width: 100%;
+    }
+}
