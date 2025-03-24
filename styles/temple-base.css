@@ -1,0 +1,139 @@
+/* styles.css */
+:root {
+    --main-blue: #003366;  /* Deep Blue */
+    --accent-gold: #FFD700; /* Warm Gold */
+}
+
+header{
+    background-color: var(--main-blue);
+    color:rgb(255, 255, 255);
+}
+
+
+header img {
+    width:30%
+}
+
+
+nav {
+    background-color: var(--accent-gold);
+    color: var(--main-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+.menuLinks .current-menu-item {
+    color: #004181;
+    background-color: #d8b801;
+}
+
+.menuLinks .current-menu-item:hover {
+    color: #004181;
+    background-color: #d8b801;
+}
+
+.menuLinks li {
+    padding: .25rem 2lvw;
+    text-decoration: none;
+    list-style: none;
+}
+.menuLinks a {
+    padding: .25rem 2lvw;
+    text-decoration: none;
+    color: var(--main-blue);
+}
+.menuLinks a:hover {
+    color: #2c66a0;
+
+}
+.menuLinks li:hover {
+    color: #2c66a0;
+    background-color: #ffdf29;
+}
+
+#grid-view {
+    min-width: 75px;
+    min-height: 75px;
+    background-image: url("../images/grid-view.webp");
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    cursor: pointer;
+    display: inline-block;
+    }
+
+.selected {
+    background-color: rgb(21, 21, 141);
+}
+
+#line-view {
+    min-width: 75px;
+    min-height: 75px;
+    background-image: url("../images/list-view.png");
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    cursor: pointer;
+    display: inline-block;
+}
+
+h1 {
+    color: var(--accent-gold);
+    font-size: 2rem;
+    margin-top: 20px;
+    align-self: center;
+}
+
+
+
+section {margin: 1rem auto;
+     max-width: 960px;
+     padding: .5rem;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+}
+
+
+.menuLinks li
+
+
+footer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    height: 60px;
+    margin-top: 30px;
+    background-color: var(--main-blue);
+    color:#f4f4f4
+}
+
+.lastModified {
+    margin-bottom: 20px;
+}
+
+main { 
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+
+h2 {
+    text-align: center;
+}
+
+
+footer {
+    color: var(--accent-gold);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--main-blue);
+}
+
