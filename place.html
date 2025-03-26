@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A page about Germany.">
+        <meta name="author" content="Micah Brown">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles/place-base.css">
+        <link rel="stylesheet" href="styles/place-small.css" media="screen and (max-width: 600px)">
+        <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 601px)">
+
+        <script src="scripts/place.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+
+        <title>Germany</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Germany</h1>
+        </header>
+        <main>
+            <picture>
+                <source srcset="images/germany-large.webp" media="(min-width: 600px)">
+                <img src="images/germany-small.webp" alt="Weather Icon">
+            </picture>       
+            <article>
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 357,600 km²</li>
+                    <li><strong>Population:</strong> 83.28 Billion</li>
+                    <li><strong>Capital:</strong> Berlin</li>
+                    <li><strong>Language:</strong> German</li>
+                    <li><strong>Currency:</strong> Euro</li>
+                    <li><strong>Time Zone:</strong> UTC+1</li>
+                    <li><strong>Calling Code:</strong> +49</li>
+                    <li><strong>Internet TLD:</strong> .de</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Weather</h2>
+                <div id="weather-icon">
+                    
+                </div>
+                <ul class="weather">
+                    <li><strong>Temperature:</strong>  17°C</li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> 2 K/MH</li>
+                </ul>
+            </article>
+        </main>
+        <footer>
+            <p>
+                <span id="currentyear"></span> Micah Brown, Germany
+            </p>
+            <p class="lastModified" id="lastModified">
+
+            </p>
+        </footer>
+    </body>
+</html>
