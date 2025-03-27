@@ -16,9 +16,11 @@ wind_chill.innerHTML += ` ${calculateWindChill(temperature, windSpeed)}`;
 const weatherIcon = document.getElementById("weather-icon");
 
 const updateWeatherIcon = () => {
-    weatherIcon.innerHTML = window.innerWidth >= 600 
-        ? "🌤" 
-        : '<img class="weather-image" src="images/partly-cloudy.svg" alt="Partly Cloudy Icon">'; 
+    if (window.innerWidth >= 600) {
+        weatherIcon.innerHTML = "🌤";
+    } else {
+        weatherIcon.innerHTML = ""; // Clears the icon when the screen is small
+    }
 };
 
 updateWeatherIcon();

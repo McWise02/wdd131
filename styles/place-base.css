@@ -95,3 +95,8 @@ footer {
     content: " 😎"; 
     font-weight: bold;
 }
+
+picture {
+    width: 30%;
+    height: auto;
+}
