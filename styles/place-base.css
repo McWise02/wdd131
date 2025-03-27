@@ -61,3 +61,16 @@ strong {
     display: inline-block;
     min-width: 150px;
 }
+
+/* Default: Small screens (apply to SVG images) */
+.weather-image {
+    width: 40%;
+    height: auto;
+}
+
+/* Large screens: Make the emoji bigger */
+@media (min-width: 600px) {
+    #weather-icon {
+        font-size: 50px; /* Adjust size as needed */
+    }
+}
