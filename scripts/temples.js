@@ -36,6 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
     old_temples.addEventListener("click", function () {
         const filtered = temples.filter(temple => {
             const year = parseInt(temple.dedicated.split(",")[0]);
+            const current = document.querySelector('.current-menu-item');
+
+            current.classList.remove("current-menu-item");
+            old_temples.classList.add("current-menu-item");
+    
             console.log(year);
             return year < 1900;
         });
@@ -45,6 +50,11 @@ document.addEventListener("DOMContentLoaded", function () {
     new_temples.addEventListener("click", function () {
         const filtered = temples.filter(temple => {
             const year = parseInt(temple.dedicated.split(",")[0]);
+            const current = document.querySelector('.current-menu-item');
+
+            current.classList.remove("current-menu-item");
+            new_temples.classList.add("current-menu-item");
+    
             return year > 2000;
         });
         createTemples(filtered);
@@ -52,11 +62,19 @@ document.addEventListener("DOMContentLoaded", function () {
     
     large_temples.addEventListener("click", function () {
         const filtered = temples.filter(temple => temple.area > 90000);
+        const current = document.querySelector('.current-menu-item');
+        current.classList.remove("current-menu-item");
+        large_temples.classList.add("current-menu-item");
         createTemples(filtered);
     });
     
     small_temples.addEventListener("click", function () {
         const filtered = temples.filter(temple => temple.area < 10000);
+        const current = document.querySelector('.current-menu-item');
+
+        current.classList.remove("current-menu-item");
+        small_temples.classList.add("current-menu-item");
+
         createTemples(filtered);
     });
     
