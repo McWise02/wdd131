@@ -31,5 +31,34 @@ figure {background-color:#fff;
 text-align: center;}
 img { width: 100%; height: auto; margin: .5rem;}
 
+
+
+.card {
+    background-color: rgb(199, 199, 199);
+    border-radius: 10px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+img {
+    max-width: 300px;
+    height: auto;
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+#card-container {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 25px;
+
+}
+
     
 
