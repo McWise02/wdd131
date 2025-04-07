@@ -99,17 +99,6 @@ section {margin: 1rem auto;
 .menuLinks li
 
 
-footer {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
-    height: 60px;
-    margin-top: 30px;
-    background-color: var(--main-blue);
-    color:#f4f4f4
-}
 
 .lastModified {
     margin-bottom: 20px;
@@ -129,7 +118,7 @@ h2 {
 footer {
     color: var(--accent-gold);
     border-radius: 10px;
-    padding: 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,3 +142,64 @@ header div {
 
 
 
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    border: 2px solid var(--main-blue);
+}
+
+label, legend {
+    display: block;
+    margin-top: 1.2rem;
+    font-weight: bold;
+    color: var(--main-blue);
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+select:invalid {
+    color: gray;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 1.2rem;
+}
+
+input[type="submit"] {
+    background-color: var(--main-blue);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent-gold);
+    color: var(--main-blue);
+}

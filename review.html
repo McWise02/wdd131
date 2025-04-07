@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A bunch of beautiful temples.">
+        <meta name="author" content="Micah Brown">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles/temple-base.css">
+        <link rel="stylesheet" href="styles/temples.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 769px)">
+
+        <script src="scripts/review.js"></script>
+        <script src="scripts/getdates.js" defer></script>
+
+        <title>Temple Album</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Temple Album</h1>
+                <nav>
+                    <button id="navButton">=</button>
+                    <ul class="menuLinks">
+                        <li class="current-menu-item"><a href="./filtered-temples.html">Home</a></li>
+                        <li id="old"><a href="#">Old</a></li>
+                        <li id="new"><a href="#">New</a></li>
+                        <li id="large"><a href="#">Large</a></li>
+                        <li id="small"><a href="#">Small</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1>Thank You for Your Review!</h1>
+            <p>You have submitted <span id="review-count">0</span> review(s).</p>
+          </main>
+        <footer>
+            <p>
+                <span id="currentyear"></span> Micah Brown, Germany
+            </p>
+            <p class="lastModified" id="lastModified">
+
+            </p>
+        </footer>
+    </body>
+</html>
