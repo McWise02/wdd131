@@ -67,7 +67,7 @@ a:hover {
 }
 
 #new-releases h2 {
-    color: var(--neutral-charcoal);
+    color: var(--highlight-deepgold);
     margin-bottom: 20px;
     font-size: 2rem;
     text-align: center;
@@ -82,6 +82,7 @@ a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     font-size: x-large;
+    color:var(--accent-cream);
 }
 
 
@@ -98,7 +99,7 @@ a:hover {
 }
 
 #upcoming-workshops h2 {
-    color: var(--neutral-charcoal);
+    color: var(--secondary-myrrh);
     margin-bottom: 20px;
     font-size: 2rem;
     text-align: center;
@@ -108,7 +109,7 @@ a:hover {
     background-color: var(--primary-gold);
     width: 100%;
     font-size: 2rem;
-    color: var(--neutral-charcoal);
+    color: var(--secondary-myrrh);
     text-align: center;
 
 }
@@ -163,7 +164,7 @@ a:hover {
 }
 
 .mission-section {
-    background: white;
+    background: var(--highlight-deepgold);
     border-left: 6px solid var(--primary-gold);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -215,7 +216,7 @@ a:hover {
   }
   
   .myrrh-btn {
-    background-color: var(--secondary-myrrh);
+    background-color: var(--primary-gold);
     color: white;
     margin: 10px
 
@@ -241,21 +242,25 @@ footer {
     gap: 10px;
     height: 100%;
     margin-top: 30px;
-    background-color: var(--highlight-deepgold);
-    color: var(--accent-cream);
+    background-color: var(--neutral-charcoal);
+    
 }
-
+footer p {
+  color: var(--accent-cream);
+}
 .lastModified {
     margin-bottom: 20px;
 }
 
 label {
     font-weight: bold;
-    color: var(--neutral-charcoal);
+    color: var(--accent-cream);
     margin-bottom: 8px;
     display: block;
 }
-
+.form-container h2 {
+  color: var(--accent-cream)
+}
 input[type="text"], input[type="email"], input[type="password"], input[type="checkbox"] {
     padding: 10px;
     margin: 10px 0 20px;
@@ -288,18 +293,21 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
+header img {
+  width: 100px;
+  height: 100px;
+}
 .btn:hover {
     background-color: var(--highlight-deepgold);
 }
 
 .terms {
     font-size: 0.9rem;
-    color: var(--neutral-charcoal);
+    color: var(--accent-cream);
 }
 
 .terms a {
-    color: var(--primary-gold);
+    color: var(--accent-cream);
     text-decoration: none;
 }
 
@@ -308,7 +316,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .form-container {
-    background-color: white;
+    background-color:var(--highlight-deepgold);
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -331,13 +339,21 @@ h2 {
     margin: 20px;
     text-align: center;
     padding: 40px;
-    background: white;
+    background: var(--highlight-deepgold);
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     position: relative;
     overflow: hidden;
   }
+  .thank-you-container p{
+    color: var(--accent-cream)
 
+  }
+
+  .thank-you-container h1 {
+    color: var(--accent-cream);
+
+  }
   h1 {
     font-size: 2.5rem;
     color: var(--primary-gold);
@@ -412,7 +428,7 @@ h2 {
   }
 
   .member {
-    background-color: white;
+    background-color: var(--highlight-deepgold);
     border-radius: 12px;
     padding: 1rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -430,13 +446,16 @@ h2 {
 
   .member h4 {
     margin: 0.5rem 0;
-    color: var(--secondary-myrrh);
+    color: var(--accent-cream);
   }
 
   .member blockquote {
     font-style: italic;
     font-size: 0.95rem;
-    color: #666;
+    color: var(--accent-cream);  }
+
+  .member p {
+    color: var(--accent-cream);
   }
 
   .history {
@@ -447,6 +466,7 @@ h2 {
   .history h2 {
     text-align: center;
     margin-bottom: 10px;
+    color: var(--secondary-myrrh);
   }
   .history p {
     font-size: 2rem;
@@ -507,22 +527,22 @@ h2 {
 }
 
 .team-sec h2 {
-    background-color: var(--secondary-myrrh);
+    background-color: var(--highlight-deepgold);
     color: var(--accent-cream);
     border-width: 4px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding: 10px;
-    border-bottom-left-radius: -10px;
 }
 
 .mission h2 {
     text-align: center;
     padding: 10px;
+    color: var(--accent-cream);
 }
 
 .mission p {
-    color: var(--neutral-charcoal)
+    color: var(--accent-cream);
 }
 
 
@@ -615,7 +635,7 @@ h2 {
   }
   
   .game-card {
-    background-color: white;
+    background-color: var(--highlight-deepgold);
     border-left: 6px solid var(--primary-gold);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -624,6 +644,10 @@ h2 {
     flex-direction: column;
     transition: transform 0.3s;
     max-height: 450px;
+  }
+
+  .game-card p {
+    color: var(--accent-cream);
   }
   
   .game-card:hover {
@@ -643,11 +667,11 @@ h2 {
   
   .game-card h4 {
     margin: 0.25rem 0;
-    color: var(--secondary-myrrh);
+    color: var(--accent-cream);
   }
   
   .game-card .price {
-    color: var(--primary-gold);
+    color: var(--accent-cream);
     font-weight: bold;
   }
   
@@ -705,7 +729,8 @@ h2 {
     background-color: var(--highlight-deepgold);
     padding: 1.5rem;
     border-radius: 12px;
-    color: white;
+    color: var(--accent-cream);
+
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   }
   
@@ -729,7 +754,7 @@ h2 {
   }
   
   .workshop-card {
-    background-color: white;
+    background-color: var(--highlight-deepgold);
     border-left: 6px solid var(--primary-gold);
     border-radius: 10px;
     overflow: hidden;
@@ -746,22 +771,26 @@ h2 {
   
   .workshop-info {
     padding: 1rem;
+    color: var(--accent-cream)
   }
   
   .workshop-info h2 {
     margin: 0 0 0.5rem 0;
     font-size: 1.3rem;
-    color: var(--secondary-myrrh);
+    color: var(--accent-cream)
   }
   
   .workshop-info p {
     margin: 0.3rem 0;
     font-size: 0.95rem;
+    color: var(--accent-cream)
+
   }
   
   .tag {
     font-weight: bold;
-    color: var(--primary-gold);
+    color: var(--accent-cream)
+
   }
 
   .carousel-image {
@@ -773,7 +802,7 @@ h2 {
 
   #welcome-message {
     background: linear-gradient(135deg, #D4AF37, #FFBF00); /* Gold gradient */
-    color: var(--neutral-charcoal);
+    color: var(--accent-cream);
     text-align: center;
     padding: 20px;
     font-size: 1.5em;
@@ -804,6 +833,18 @@ h2 {
     border: 1px solid #888;
     width: 80%;
     max-width: 600px;
+    color: var(--accent-cream);
+
+  }
+
+  .modal-content h2 {
+    color: var(--accent-cream)
+
+  }
+
+  .modal-content p {
+    color: var(--accent-cream)
+
   }
   
   .close {
