@@ -1,7 +1,7 @@
 const sections = document.querySelectorAll("section");
 
 sections.forEach(section => {
-    const button = section.querySelector("#expand-button");
+    const button = section.querySelector(".expand-button");
     const content = section.querySelector(".content");
 
     button.addEventListener("click", () => {
