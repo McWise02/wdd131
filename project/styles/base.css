@@ -20,8 +20,8 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--primary-gold);
-    color: var(--neutral-charcoal);
+    background-color: var(--neutral-charcoal);
+    color: var(--accent-cream);
 }
 header img{
     width: 100px;
@@ -40,7 +40,7 @@ nav{
 a {
     font-size: 1.25rem;
     text-decoration: none;
-    color: var(--neutral-charcoal);
+    color: var(--accent-cream);
     border-bottom: 4px solid transparent; /* Initially set border to transparent */
     transition: border-color 0.4s ease, border-width 0.4s ease; /* Transition effect */
 }
